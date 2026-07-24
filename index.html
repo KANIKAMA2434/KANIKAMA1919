@@ -4,297 +4,13 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-<title>ASIAN KUNG-FU GENERATION ソルファ紹介</title>
+<title>
+ASIAN KUNG-FU GENERATION FAN PAGE
+</title>
 
-  
-<style>
-
-body{
-
-margin:0;
-
-font-family:
-"Yu Gothic",
-"Noto Sans JP",
-sans-serif;
-
-background:
-linear-gradient(
-135deg,
-#dbeafe,
-#ffffff
-);
-
-color:#333;
-
-text-align:center;
-
-}
-
-
-/* ヘッダー */
-
-header{
-
-background:#172554;
-
-color:white;
-
-padding:60px 20px;
-
-}
-
-
-header h1{
-
-font-size:42px;
-
-margin-bottom:15px;
-
-}
-
-
-header p{
-
-font-size:20px;
-
-}
-
-
-
-
-/* 動画 */
-
-.movie{
-
-margin:40px auto;
-
-}
-
-
-iframe{
-
-width:85%;
-
-max-width:900px;
-
-height:500px;
-
-border-radius:20px;
-
-border:none;
-
-box-shadow:
-0 10px 30px #0004;
-
-}
-
-
-
-
-/* カード */
-
-.card{
-
-background:white;
-
-width:80%;
-
-max-width:900px;
-
-margin:40px auto;
-
-padding:40px;
-
-border-radius:20px;
-
-
-box-shadow:
-
-0 10px 25px #0002;
-
-
-}
-
-
-
-h2{
-
-color:#172554;
-
-font-size:30px;
-
-margin-bottom:25px;
-
-}
-
-
-
-p{
-
-font-size:18px;
-
-line-height:2;
-
-}
-
-
-
-
-/* アルバム */
-
-
-.album{
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-gap:40px;
-
-flex-wrap:wrap;
-
-}
-
-
-
-.album img{
-
-width:280px;
-
-border-radius:15px;
-
-box-shadow:
-
-0 10px 20px #0003;
-
-}
-
-
-
-.album-text{
-
-max-width:450px;
-
-}
-
-
-
-
-/* 曲一覧 */
-
-
-.song-list{
-
-display:grid;
-
-grid-template-columns:
-
-repeat(auto-fit,minmax(200px,1fr));
-
-gap:20px;
-
-}
-
-
-
-.song-list a{
-
-display:block;
-
-padding:20px;
-
-
-background:#1e40af;
-
-color:white;
-
-text-decoration:none;
-
-
-border-radius:15px;
-
-
-font-size:18px;
-
-
-transition:.3s;
-
-
-}
-
-
-
-.song-list a:hover{
-
-background:#dc2626;
-
-transform:translateY(-5px);
-
-}
-
-
-
-/* 年表 */
-
-
-.history{
-
-text-align:left;
-
-}
-
-
-.history div{
-
-background:#eff6ff;
-
-margin:20px;
-
-padding:20px;
-
-border-left:6px solid #2563eb;
-
-border-radius:10px;
-
-}
-
-
-
-.year{
-
-font-size:25px;
-
-font-weight:bold;
-
-color:#1d4ed8;
-
-}
-
-
-
-
-
-footer{
-
-background:#172554;
-
-color:white;
-
-padding:30px;
-
-margin-top:50px;
-
-}
-
-
-
-</style>
-
+<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -302,15 +18,27 @@ margin-top:50px;
 <body>
 
 
+<!-- 花びら背景 -->
+<div class="flowers">
+🌸 🌸 🌸
+</div>
+
+
+
+<!-- ヘッダー -->
+
 <header>
+
 
 <h1>
 ASIAN KUNG-FU GENERATION
 </h1>
 
+
 <p>
-Album「ソルファ」紹介サイト
+Flowers × Sol-fa FAN SITE
 </p>
+
 
 </header>
 
@@ -318,7 +46,43 @@ Album「ソルファ」紹介サイト
 
 
 
-<div class="movie">
+<!-- メニュー -->
+
+<nav>
+
+<a href="#about">
+アジカンとは
+</a>
+
+<a href="#member">
+メンバー
+</a>
+
+<a href="#album">
+アルバム
+</a>
+
+<a href="#song">
+楽曲
+</a>
+
+<a href="#history">
+歴史
+</a>
+
+
+</nav>
+
+
+
+
+
+
+
+<!-- 動画 -->
+
+
+<section class="video">
 
 
 <iframe
@@ -330,13 +94,20 @@ allowfullscreen>
 </iframe>
 
 
-</div>
+</section>
 
 
 
 
 
-<section class="card">
+
+
+
+
+<!-- アジカン紹介 -->
+
+
+<section class="card" id="about">
 
 
 <h2>
@@ -344,38 +115,31 @@ allowfullscreen>
 </h2>
 
 
+
 <p>
 
 ASIAN KUNG-FU GENERATION
 （アジアン・カンフー・ジェネレーション）は、
+
 1996年に結成された日本のロックバンドです。<br><br>
 
 
-メンバーは、
-
-後藤正文（ボーカル・ギター）
-
-<br>
-喜多建介（ギター）
-
-<br>
-山田貴洋（ベース）
-
-<br>
-伊地知潔（ドラム）
-
-<br><br>
-
-
 力強いギターサウンドと、
-青春や人生の悩みを描いた歌詞が魅力です。<br><br>
+
+青春・葛藤・希望を描いた歌詞が魅力で、
+
+日本だけでなく海外にも多くのファンがいます。<br><br>
 
 
-代表曲には
+2003年にメジャーデビューし、
+
 「リライト」
+
 「遥か彼方」
+
 「ソラニン」
-などがあります。
+
+など数多くの名曲を発表しています。
 
 </p>
 
@@ -388,12 +152,112 @@ ASIAN KUNG-FU GENERATION
 
 
 
-<section class="card">
+
+<!-- メンバー -->
+
+
+<section class="card" id="member">
 
 
 <h2>
-💿 アルバム「ソルファ」
+🎤 メンバー
 </h2>
+
+
+
+<div class="members">
+
+
+
+<div class="member">
+
+<h3>
+後藤正文
+</h3>
+
+<p>
+ボーカル・ギター<br>
+作詞作曲を担当。
+特徴的な歌声と心に残る歌詞が魅力。
+</p>
+
+</div>
+
+
+
+
+<div class="member">
+
+<h3>
+喜多建介
+</h3>
+
+<p>
+ギター・ボーカル<br>
+力強いギターサウンドを支える存在。
+</p>
+
+</div>
+
+
+
+
+
+<div class="member">
+
+<h3>
+山田貴洋
+</h3>
+
+<p>
+ベース<br>
+楽曲を支える安定した演奏。
+</p>
+
+</div>
+
+
+
+
+
+<div class="member">
+
+<h3>
+伊地知潔
+</h3>
+
+<p>
+ドラム<br>
+迫力あるリズムを作り出す。
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ソルファ -->
+
+
+<section class="card" id="album">
+
+
+<h2>
+💿 ソルファ
+</h2>
+
 
 
 <div class="album">
@@ -402,21 +266,29 @@ ASIAN KUNG-FU GENERATION
 <img src="images/solfa.jpg">
 
 
-<div class="album-text">
+
+<div>
 
 
 <p>
 
 「ソルファ」は2004年発売の
-ASIAN KUNG-FU GENERATIONの2ndアルバムです。<br><br>
+2ndアルバムです。<br><br>
 
 
-「リライト」などの代表曲を収録し、
-アジカンを代表する作品のひとつです。<br><br>
+「リライト」
+
+「君の街まで」
+
+「ループ＆ループ」
+
+などを収録。<br><br>
 
 
-疾走感のあるロックサウンドと、
-心に残る歌詞が多くのファンに愛されています。
+アジカンを代表する作品で、
+
+青春の不安や希望を感じられる
+アルバムです。
 
 </p>
 
@@ -435,64 +307,147 @@ ASIAN KUNG-FU GENERATIONの2ndアルバムです。<br><br>
 
 
 
+
+<!-- アルバム一覧 -->
+
+
 <section class="card">
 
 
 <h2>
-🎧 収録曲
+💿 アルバム一覧
 </h2>
 
 
-<div class="song-list">
+
+<div class="albums">
 
 
-<a href="https://www.youtube.com/results?search_query=ASIAN+KUNG-FU+GENERATION+振動覚">
-振動覚
-</a>
+<div>
+2002<br>
+崩壊アンプリファー
+</div>
+
+
+<div>
+2003<br>
+君繋ファイブエム
+</div>
+
+
+<div>
+2004<br>
+ソルファ
+</div>
+
+
+<div>
+2006<br>
+ファンクラブ
+</div>
+
+
+<div>
+2008<br>
+ワールド ワールド ワールド
+</div>
+
+
+<div>
+2022<br>
+プラネットフォークス
+</div>
+
+
+
+</div>
+
+
+</section>
+<!-- 楽曲紹介 -->
+
+<section class="card" id="song">
+
+<h2>
+🎧 楽曲紹介
+</h2>
+
+
+<div class="songs">
 
 
 <a href="https://www.youtube.com/results?search_query=ASIAN+KUNG-FU+GENERATION+リライト">
+
+<h3>
 リライト
+</h3>
+
+<p>
+アジカンを代表する楽曲。
+疾走感のあるギターと印象的な歌詞が魅力。
+</p>
+
+<span>
+▶ YouTubeで聴く
+</span>
+
 </a>
 
-
-<a href="https://www.youtube.com/results?search_query=ASIAN+KUNG-FU+GENERATION+ループループ">
-ループ＆ループ
-</a>
 
 
 <a href="https://www.youtube.com/results?search_query=ASIAN+KUNG-FU+GENERATION+君の街まで">
+
+<h3>
 君の街まで
+</h3>
+
+<p>
+爽やかなメロディーと、
+前向きな気持ちになれる歌詞が特徴。
+</p>
+
+<span>
+▶ YouTubeで聴く
+</span>
+
 </a>
 
 
-<a href="https://www.youtube.com/results?search_query=ASIAN+KUNG-FU+GENERATION+マイワールド">
-マイワールド
+
+<a href="https://www.youtube.com/results?search_query=ASIAN+KUNG-FU+GENERATION+ループループ">
+
+<h3>
+ループ＆ループ
+</h3>
+
+<p>
+軽快なリズムとポップな雰囲気が魅力の楽曲。
+</p>
+
+<span>
+▶ YouTubeで聴く
+</span>
+
 </a>
 
 
-<a href="https://www.youtube.com/results?search_query=ASIAN+KUNG-FU+GENERATION+夜の向こう">
-夜の向こう
-</a>
-
-
-<a href="https://www.youtube.com/results?search_query=ASIAN+KUNG-FU+GENERATION+ラストシーン">
-ラストシーン
-</a>
-
-
-<a href="https://www.youtube.com/results?search_query=ASIAN+KUNG-FU+GENERATION+サイレン">
-サイレン
-</a>
 
 
 <a href="https://www.youtube.com/results?search_query=ASIAN+KUNG-FU+GENERATION+Re:Re:">
+
+<h3>
 Re:Re:
-</a>
+</h3>
 
+<p>
+切ないメロディーと深い歌詞で、
+長く愛されている名曲。
+</p>
 
-<a href="https://www.youtube.com/results?search_query=ASIAN+KUNG-FU+GENERATION+海岸通り">
-海岸通り
+<span>
+▶ YouTubeで聴く
+</span>
+
 </a>
 
 
@@ -507,7 +462,94 @@ Re:Re:
 
 
 
+
+<!-- 推しポイント -->
+
+
 <section class="card">
+
+
+<h2>
+⭐ アジカンの魅力
+</h2>
+
+
+
+<div class="ranking">
+
+
+<div>
+🥇 心に残る歌詞
+</div>
+
+
+<div>
+🥈 力強いバンドサウンド
+</div>
+
+
+<div>
+🥉 ライブでの迫力
+</div>
+
+
+<div>
+🌸 聴く人に寄り添う音楽
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ギャラリー -->
+
+
+<section class="card">
+
+
+<h2>
+🖼️ ギャラリー
+</h2>
+
+
+<div class="gallery">
+
+
+<img src="images/photo1.jpg">
+
+<img src="images/photo2.jpg">
+
+<img src="images/photo3.jpg">
+
+
+</div>
+
+
+<p>
+※画像は利用可能なものを使用してください。
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- 活動年表 -->
+
+
+<section class="card" id="history">
 
 
 <h2>
@@ -515,61 +557,99 @@ Re:Re:
 </h2>
 
 
-<div class="history">
+
+
+<div class="timeline">
 
 
 <div>
 
-<span class="year">
+<strong>
 1996年
-</span>
+</strong>
 
-<br>
-
-バンド結成
+<p>
+ASIAN KUNG-FU GENERATION結成
+</p>
 
 </div>
 
 
+
+
 <div>
 
-<span class="year">
+<strong>
 2003年
-</span>
+</strong>
 
-<br>
-
+<p>
 メジャーデビュー
+</p>
 
 </div>
 
 
+
+
 <div>
 
-<span class="year">
+<strong>
 2004年
-</span>
+</strong>
 
-<br>
-
-アルバム「ソルファ」発売
-<br>
+<p>
+アルバム「ソルファ」発売<br>
 「リライト」が大ヒット
+</p>
 
 </div>
+
+
 
 
 <div>
 
-<span class="year">
-現在
-</span>
+<strong>
+2013年
+</strong>
 
-<br>
-
-日本を代表するロックバンドとして活動中
+<p>
+結成15周年
+</p>
 
 </div>
+
+
+
+
+<div>
+
+<strong>
+2022年
+</strong>
+
+<p>
+アルバム「プラネットフォークス」発売
+</p>
+
+</div>
+
+
+
+
+<div>
+
+<strong>
+現在
+</strong>
+
+<p>
+日本を代表するロックバンドとして活動中
+</p>
+
+</div>
+
 
 
 </div>
@@ -581,11 +661,55 @@ Re:Re:
 
 
 
+
+
+
+<!-- SNS -->
+
+<section class="card">
+
+
+<h2>
+🔗 公式リンク
+</h2>
+
+
+<p>
+
+
+<a href="https://www.asiankung-fu.com/">
+公式サイト
+</a>
+
+
+<br><br>
+
+
+<a href="https://www.youtube.com/results?search_query=ASIAN+KUNG-FU+GENERATION">
+
+YouTube
+
+</a>
+
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
 <footer>
 
-ASIAN KUNG-FU GENERATION FAN PAGE
+ASIAN KUNG-FU GENERATION FAN SITE
 
 </footer>
+
 
 
 
