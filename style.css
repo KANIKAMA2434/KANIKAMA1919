@@ -1,189 +1,77 @@
-/* =====================
-   全体
-===================== */
-
-
 *{
-
-margin:0;
-padding:0;
-box-sizing:border-box;
-
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-
 
 
 html{
-
-scroll-behavior:smooth;
-
+    scroll-behavior:smooth;
 }
-
 
 
 body{
-
-
-font-family:
-
-"Yu Gothic",
-"Noto Sans JP",
-sans-serif;
-
-
-background:
-
-linear-gradient(
-135deg,
-#020617,
-#0f172a,
-#172554
-);
-
-
-color:white;
-
-
-text-align:center;
-
-
-overflow-x:hidden;
-
-
+    font-family:"Yu Gothic","Noto Sans JP",sans-serif;
+    background:
+    linear-gradient(135deg,#020617,#172554);
+    color:white;
+    text-align:center;
+    overflow-x:hidden;
 }
 
 
-
-/* =====================
- 花びら
-===================== */
-
+/* 花びら */
 
 .petals{
-
-
-position:fixed;
-
-top:0;
-
-left:0;
-
-width:100%;
-
-height:100%;
-
-pointer-events:none;
-
-z-index:-1;
-
-
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    z-index:-1;
 }
-
 
 
 .petals::before{
-
-
-content:"🌸 🌸 🌸 🌸 🌸";
-
-
-position:absolute;
-
-
-top:-50px;
-
-
-left:0;
-
-
-width:100%;
-
-
-font-size:35px;
-
-
-opacity:.5;
-
-
-animation:
-
-fall 15s linear infinite;
-
-
+    content:"🌸 🌸 🌸 🌸 🌸";
+    position:absolute;
+    top:-50px;
+    width:100%;
+    font-size:35px;
+    opacity:0.5;
+    animation:fall 15s linear infinite;
 }
-
 
 
 .petals::after{
-
-
-content:"🌸 🌸 🌸";
-
-
-position:absolute;
-
-
-top:-100px;
-
-
-left:50%;
-
-
-font-size:45px;
-
-
-opacity:.4;
-
-
-animation:
-
-fall 20s linear infinite;
-
-
+    content:"🌸 🌸 🌸";
+    position:absolute;
+    left:50%;
+    top:-100px;
+    font-size:40px;
+    opacity:0.4;
+    animation:fall 20s linear infinite;
 }
-
-
 
 
 @keyframes fall{
 
-
-0%{
-
-transform:
-
-translateY(-100px)
-rotate(0deg);
-
+from{
+    transform:translateY(-100px) rotate(0);
 }
 
-
-100%{
-
-
-transform:
-
-translateY(110vh)
-rotate(360deg);
-
-
+to{
+    transform:translateY(110vh) rotate(360deg);
 }
-
 
 }
 
 
 
-
-
-
-/* =====================
- ナビ
-===================== */
-
+/* ナビ */
 
 nav{
-
 
 position:fixed;
 
@@ -193,743 +81,373 @@ left:0;
 
 width:100%;
 
-
 padding:20px;
 
+background:rgba(2,6,23,0.85);
 
 display:flex;
 
-
 justify-content:center;
 
+gap:25px;
 
-gap:35px;
-
-
-background:
-
-rgba(2,6,23,.75);
-
-
-backdrop-filter:
-
-blur(10px);
-
-
-z-index:100;
-
+z-index:10;
 
 }
-
 
 
 nav a{
 
-
 color:white;
-
 
 text-decoration:none;
 
-
 font-weight:bold;
 
-
-transition:.3s;
-
-
 }
-
 
 
 nav a:hover{
 
-
 color:#60a5fa;
-
 
 }
 
 
 
-
-.logo{
-
-position:absolute;
-
-left:30px;
-
-color:#60a5fa;
-
-font-size:25px;
-
-font-weight:bold;
-
-}
-
-
-
-
-/* =====================
- ヘッダー
-===================== */
-
-
+/* ヘッダー */
 
 header{
 
-
 padding:150px 20px 80px;
 
-
-background:
-
-linear-gradient(
-180deg,
-#020617,
-transparent
-);
-
-
 }
-
 
 
 header h1{
 
-
 font-size:45px;
-
-
-letter-spacing:4px;
-
 
 color:#fff;
 
-
 text-shadow:
-
-
 0 0 10px #2563eb,
 0 0 30px #2563eb;
-
 
 }
 
 
-
 header p{
-
 
 font-size:22px;
 
 margin-top:20px;
 
-
 }
 
 
 
-
-
-/* =====================
- 動画
-===================== */
-
+/* 動画 */
 
 .movie{
 
-
-margin:50px auto;
-
+margin:40px auto;
 
 }
-
 
 
 iframe{
 
-
 width:85%;
-
 
 max-width:900px;
 
-
 height:500px;
+
+border-radius:20px;
+
+border:none;
+
+box-shadow:0 0 40px #2563eb;
+
+}
+
+
+
+/* カード */
+
+.card{
+
+width:85%;
+
+max-width:1000px;
+
+margin:60px auto;
+
+padding:40px;
+
+
+background:rgba(255,255,255,0.08);
 
 
 border-radius:25px;
 
 
-box-shadow:
+border:1px solid rgba(255,255,255,0.2);
 
 
-0 0 40px #2563eb;
+backdrop-filter:blur(10px);
 
 
-}
-
-
-
-
-/* =====================
- カード
-===================== */
-
-
-.card{
-
-
-width:85%;
-
-
-max-width:1000px;
-
-
-margin:70px auto;
-
-
-padding:45px;
-
-
-
-background:
-
-
-rgba(255,255,255,.08);
-
-
-
-border:
-
-
-1px solid rgba(255,255,255,.2);
-
-
-
-border-radius:30px;
-
-
-
-backdrop-filter:
-
-blur(15px);
-
-
-
-box-shadow:
-
-
-0 20px 50px rgba(0,0,0,.4);
-
-
-
-transition:.5s;
-
-
-
-opacity:0;
-
-
-transform:
-
-translateY(40px);
-
+box-shadow:0 15px 40px rgba(0,0,0,.4);
 
 
 }
-
-
-
-.card.show{
-
-
-opacity:1;
-
-
-transform:
-
-translateY(0);
-
-
-}
-
-
-
-
-.card:hover{
-
-
-transform:
-
-translateY(-10px);
-
-
-box-shadow:
-
-
-0 0 40px #2563eb;
-
-
-}
-
-
 
 
 h2{
 
-
-font-size:35px;
-
-
-margin-bottom:30px;
-
-
 color:#60a5fa;
 
+font-size:32px;
+
+margin-bottom:25px;
 
 }
-
 
 
 p{
 
-
 line-height:2;
-
-
-font-size:17px;
-
 
 }
 
 
-
-
-/* =====================
- メンバー
-===================== */
-
-
+/* メンバー */
 
 .members{
 
-
 display:grid;
 
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 
-grid-template-columns:
-
-repeat(auto-fit,minmax(220px,1fr));
-
-
-gap:25px;
-
+gap:20px;
 
 }
-
 
 
 .member{
 
-
 background:#020617;
 
-
-padding:25px;
-
+padding:20px;
 
 border-radius:20px;
 
-
-transition:.4s;
-
-
 }
-
-
-
-.member:hover{
-
-
-transform:scale(1.05);
-
-
-box-shadow:
-
-0 0 30px #2563eb;
-
-
-}
-
 
 
 .member img{
 
+width:130px;
 
-width:150px;
-
-
-height:150px;
-
-
-object-fit:cover;
-
+height:130px;
 
 border-radius:50%;
 
+object-fit:cover;
 
 }
 
 
 
-
-
-/* =====================
- アルバム
-===================== */
-
+/* アルバム */
 
 .album{
 
-
 display:flex;
-
 
 justify-content:center;
 
-
 align-items:center;
-
 
 gap:40px;
 
-
 flex-wrap:wrap;
 
-
 }
-
 
 
 .album img{
 
-
 width:300px;
-
 
 border-radius:20px;
 
-
-box-shadow:
-
-
-0 0 40px #2563eb;
-
+box-shadow:0 0 30px #2563eb;
 
 }
-
 
 
 
 .text{
 
-
 max-width:450px;
-
 
 }
 
 
 
-
-
-/* =====================
- アルバム一覧
-===================== */
-
-
+/* アルバム一覧 */
 
 .albums{
 
-
 display:grid;
 
-
-grid-template-columns:
-
-repeat(auto-fit,minmax(180px,1fr));
-
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 
 gap:20px;
 
-
 }
-
 
 
 .albums div{
 
-
-background:#1e3a8a;
-
+background:#1e40af;
 
 padding:25px;
 
-
 border-radius:20px;
 
-
-transition:.3s;
-
-
 }
 
 
 
-.albums div:hover{
-
-
-transform:
-
-translateY(-10px);
-
-
-background:#2563eb;
-
-
-}
-
-
-
-
-
-/* =====================
- 曲カード
-===================== */
-
+/* 曲 */
 
 .songs{
 
-
 display:grid;
 
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 
-grid-template-columns:
-
-repeat(auto-fit,minmax(220px,1fr));
-
-
-gap:25px;
-
+gap:20px;
 
 }
-
 
 
 .songs a{
 
+display:block;
 
-text-decoration:none;
+background:#2563eb;
 
+padding:25px;
+
+border-radius:20px;
 
 color:white;
 
+text-decoration:none;
 
-background:
-
-
-linear-gradient(
-135deg,
-#1e3a8a,
-#2563eb
-);
-
-
-
-padding:30px;
-
-
-border-radius:25px;
-
-
-transition:.4s;
-
+transition:.3s;
 
 }
-
 
 
 .songs a:hover{
 
+transform:translateY(-8px);
 
-transform:
-
-translateY(-12px);
-
-
-background:
-
-
-linear-gradient(
-135deg,
-#2563eb,
-#60a5fa
-);
-
-
-box-shadow:
-
-0 0 30px #2563eb;
-
+background:#3b82f6;
 
 }
 
 
 
-
-
-/* =====================
- ポイント
-===================== */
-
+/* ポイント */
 
 .points{
 
-
 display:grid;
 
-
-grid-template-columns:
-
-repeat(auto-fit,minmax(220px,1fr));
-
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 
 gap:20px;
 
-
 }
-
 
 
 .points div{
 
-
 background:#020617;
 
-
-padding:25px;
-
+padding:20px;
 
 border-radius:20px;
 
-
 }
 
 
 
-
-/* =====================
- ギャラリー
-===================== */
-
+/* ギャラリー */
 
 .gallery{
 
-
 display:grid;
 
-
-grid-template-columns:
-
-repeat(auto-fit,minmax(220px,1fr));
-
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 
 gap:20px;
 
-
 }
-
 
 
 .gallery img{
 
-
 width:100%;
-
 
 height:250px;
 
-
 object-fit:cover;
-
 
 border-radius:20px;
 
-
-transition:.5s;
-
+transition:.4s;
 
 }
-
 
 
 .gallery img:hover{
 
-
-transform:scale(1.08);
-
-
-box-shadow:
-
-
-0 0 40px #2563eb;
-
+transform:scale(1.05);
 
 }
 
 
 
-
-
-/* =====================
- 年表
-===================== */
-
+/* 年表 */
 
 .timeline{
 
-
-border-left:
-
-5px solid #2563eb;
-
+border-left:5px solid #2563eb;
 
 text-align:left;
 
-
-padding-left:30px;
-
+padding-left:25px;
 
 }
-
 
 
 .event{
 
-
-margin:40px 0;
-
-
 background:#020617;
 
+margin:30px 0;
 
-padding:25px;
+padding:20px;
 
-
-border-radius:20px;
-
+border-radius:15px;
 
 }
 
@@ -937,50 +455,33 @@ border-radius:20px;
 
 .event h3{
 
-
 color:#60a5fa;
-
 
 font-size:30px;
 
-
 }
 
 
 
-
-
-/* =====================
- リンク
-===================== */
-
+/* リンク */
 
 .links a{
 
-
 display:inline-block;
-
-
-margin:15px;
-
-
-padding:15px 30px;
-
 
 background:#2563eb;
 
-
 color:white;
 
+padding:15px 25px;
 
 border-radius:30px;
 
+margin:10px;
 
 text-decoration:none;
 
-
 }
-
 
 
 
@@ -988,106 +489,73 @@ text-decoration:none;
 
 #top{
 
-
 position:fixed;
 
+right:25px;
 
-bottom:30px;
-
-
-right:30px;
-
-
-padding:15px 25px;
-
-
-border:none;
-
-
-border-radius:30px;
-
+bottom:25px;
 
 background:#2563eb;
 
-
 color:white;
 
+border:none;
 
-cursor:pointer;
+padding:15px 20px;
 
+border-radius:30px;
 
 }
 
 
 
+/* フッター */
 
 footer{
 
+margin-top:50px;
 
 padding:40px;
 
-
 background:#020617;
-
-
-margin-top:50px;
-
 
 }
 
 
 
-
-/* =====================
- スマホ
-===================== */
-
+/* スマホ */
 
 @media(max-width:700px){
+
+header h1{
+
+font-size:30px;
+
+}
 
 
 nav{
 
-
-gap:15px;
-
-
 font-size:12px;
 
+gap:10px;
 
 }
-
-
-header h1{
-
-
-font-size:30px;
-
-
-}
-
 
 
 iframe{
 
-
 height:250px;
 
-
 }
-
 
 
 .card{
 
-
 width:92%;
-
 
 padding:25px;
 
-
 }
-
 
 }
